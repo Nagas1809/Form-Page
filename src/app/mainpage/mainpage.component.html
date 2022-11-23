@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="title"> Send us a message</div>
+  <div class="boxEn">
+    <div class="user-details">
+      <div class="input-box">
+        <span class="details">Name*</span>
+        <input [(ngModel)]="userName" type="text" placeholder="Your Name">
+      </div>
+      <div class="input-box">
+        <span class="details">Email*</span>
+        <input [(ngModel)]="emailID" type="text" placeholder="Your email">
+      </div>
+      <div class="input-box">
+        <span class="details">Phone</span>
+        <input [(ngModel)]="phNo" type="text" placeholder="Phone#">
+      </div>
+      <div class="input-box">
+        <span class="details">Company</span>
+        <input type="text" placeholder=" Company Name">
+      </div>
+      <div class="input-box">
+        <span class="details">Message*</span>
+        <input [(ngModel)]="message" type="text" placeholder="Write your message">
+      </div>
+
+    </div>
+  </div>
+  <button [disabled]="userName =='' || emailID ==''|| message =='' ">SEND MESSAGE</button>
+   <i class="fa-regular fa-user"></i>
+
+
+
+
+
+</div>
+<nav>
+  <h2>Contact Information</h2>
+
+  >
+  <div class="sidebar-container">
+
+    <div>
+      <p>{{message}}</p>
+      <p> {{userName}}</p>
+      <p> {{phNo}} </p>
+      <p> {{emailID}} </p>
+    </div>
+
+  </div>
+</nav>

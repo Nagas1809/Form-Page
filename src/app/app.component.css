@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(160,228,203,1) 60%, rgba(160,228,203,1) 100%);
+}
+
+
